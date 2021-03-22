@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-12T21:49:50.547Z",
+    "end": "2021-03-12T21:55:16.603Z",
+    "duration": 326056,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b89decfa-9892-4f84-ab80-720b39a5b474",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "652efb7c-ca3d-4679-9deb-775b786d521f",
+          "title": "GiftboxTesting",
+          "fullFile": "/home/lucio/Escritorio/GIFTBOX/Testing/GiftboxTesting.spec.js",
+          "file": "/GiftboxTesting.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"GiftboxTesting\"",
+              "fullTitle": "GiftboxTesting \"before each\" hook in \"GiftboxTesting\"",
+              "timedOut": false,
+              "duration": 654,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "8f283496-ef39-4b5d-bc83-8ea199fa99cc",
+              "parentUUID": "652efb7c-ca3d-4679-9deb-775b786d521f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"GiftboxTesting\"",
+              "fullTitle": "GiftboxTesting \"after each\" hook in \"GiftboxTesting\"",
+              "timedOut": false,
+              "duration": 54,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "d43c5ff7-6f24-43ef-9cd2-51f31c21d9d0",
+              "parentUUID": "652efb7c-ca3d-4679-9deb-775b786d521f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Chequeo de campos vacios",
+              "fullTitle": "GiftboxTesting Chequeo de campos vacios",
+              "timedOut": false,
+              "duration": 82443,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Logeo de usuario. Con nombre de cuenta y contraseña.\n    \n     await driver.get(\"http://localhost:3000\")\n     await driver.findElement(By.css(\"#headerContainer > div.headerUser.centerVerticalColumn > div.headerUserBottom.spaceBetween > a > div > p\")).click()\n     await driver.findElement(By.css(\"#root > div > div.editUsuario > div.modificarEmailUsuario > input[type=text]:nth-child(2)\")).sendKeys(\"lucio_benedettelli@gmail.com\")\n     await driver.sleep(15000)\n     await driver.findElement(By.css(\"#root > div > div.editUsuario > div.modificarEmailUsuario > input[type=texto]:nth-child(3)\")).sendKeys(\"sw2032\")\n     await driver.sleep(15000)\n     await driver.findElement(By.css(\"#root > div > div.editUsuario > div.guardaCambioContraseña\")).click()\n     await driver.sleep(15000)\n     await driver.findElement(By.css(\"#headerContainer > div.headerUser.centerVerticalColumn > div.headerUserBottom.spaceBetween > a > div > div > div > div > div > p\")).click()\n     await driver.sleep(15000)\n     //Primer prueba: Chequear si se puede llenar el formulario con campos vacios\n     await driver.findElement(By.css(\"#root > div > div:nth-child(2) > div:nth-child(2) > div > p\")).click()\n     await driver.sleep(15000)\n     assert(await driver.findElement(By.css(\".errores > h2\")).getText() == \"¡Todos los campos son requeridos!\")",
+              "err": {},
+              "uuid": "00398b89-b353-444b-a617-005adeb715d4",
+              "parentUUID": "652efb7c-ca3d-4679-9deb-775b786d521f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testeo si las passwords coinciden",
+              "fullTitle": "GiftboxTesting Testeo si las passwords coinciden",
+              "timedOut": false,
+              "duration": 112757,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000\")\nawait driver.findElement(By.css(\"#headerContainer > div.headerUser.centerVerticalColumn > div.headerUserBottom.spaceBetween > a > div > p\")).click()\nawait driver.findElement(By.css(\"#root > div > div.editUsuario > div.modificarEmailUsuario > input[type=text]:nth-child(2)\")).sendKeys(\"lucio_benedettelli@gmail.com\")\nawait driver.sleep(15000)\nawait driver.findElement(By.css(\"#root > div > div.editUsuario > div.modificarEmailUsuario > input[type=texto]:nth-child(3)\")).sendKeys(\"sw2032\")\nawait driver.sleep(15000)\nawait driver.findElement(By.css(\"#root > div > div.editUsuario > div.guardaCambioContraseña\")).click()\nawait driver.sleep(15000)\nawait driver.findElement(By.css(\"#headerContainer > div.headerUser.centerVerticalColumn > div.headerUserBottom.spaceBetween > a > div > div > div > div > div > p\")).click()\nawait driver.sleep(15000) \n\n     // Segunda prueba: Chequear si la contraseña actual con la verificadora coinciden o no.\n \n     await driver.findElement(By.css(\"#root > div > div:nth-child(2) > div:nth-child(2) > form > input[type=texto]:nth-child(1)\")).sendKeys(\"sw2032\")\n     await driver.sleep(15000)\n     await driver.findElement(By.css(\"#root > div > div:nth-child(2) > div:nth-child(2) > form > input[type=texto]:nth-child(2)\")).sendKeys(\"bootcamp\")\n     await driver.sleep(15000)\n     await driver.findElement(By.css(\"#root > div > div:nth-child(2) > div:nth-child(2) > form > div > input[type=texto]\")).sendKeys(\"star\")\n     await driver.sleep(15000)\n     assert(await driver.findElement(By.css(\".errores > h2\")).getText() == \"¡Las contraseñas no coinciden!\")",
+              "err": {},
+              "uuid": "b6eae3ee-cf9a-42cb-a850-36b0128d44a6",
+              "parentUUID": "652efb7c-ca3d-4679-9deb-775b786d521f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testeo si todo esta OK",
+              "fullTitle": "GiftboxTesting Testeo si todo esta OK",
+              "timedOut": false,
+              "duration": 128281,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:3000\")\nawait driver.findElement(By.css(\"#headerContainer > div.headerUser.centerVerticalColumn > div.headerUserBottom.spaceBetween > a > div > p\")).click()\nawait driver.findElement(By.css(\"#root > div > div.editUsuario > div.modificarEmailUsuario > input[type=text]:nth-child(2)\")).sendKeys(\"lucio_benedettelli@gmail.com\")\nawait driver.sleep(15000)\nawait driver.findElement(By.css(\"#root > div > div.editUsuario > div.modificarEmailUsuario > input[type=texto]:nth-child(3)\")).sendKeys(\"sw2032\")\nawait driver.sleep(15000)\nawait driver.findElement(By.css(\"#root > div > div.editUsuario > div.guardaCambioContraseña\")).click()\nawait driver.sleep(15000)\nawait driver.findElement(By.css(\"#headerContainer > div.headerUser.centerVerticalColumn > div.headerUserBottom.spaceBetween > a > div > div > div > div > div > p\")).click()\nawait driver.sleep(15000) \n  \n     // Tercera prueba: Si se completan todos los campos. Y la contraseña actual con la verificadora coincide, \n     //se puede cambiar la contraseña..\n\n    \n \n     await driver.findElement(By.css(\"#root > div > div:nth-child(2) > div:nth-child(2) > form > input[type=texto]:nth-child(1)\")).sendKeys(\"sw2032\")\n     await driver.sleep(15000)\n \n     await driver.findElement(By.css(\"#root > div > div:nth-child(2) > div:nth-child(2) > form > input[type=texto]:nth-child(2)\")).sendKeys(\"sw2032\")\n     await driver.sleep(15000)\n\n     await driver.findElement(By.css(\"#root > div > div:nth-child(2) > div:nth-child(2) > form > div > input[type=texto]\")).sendKeys(\"sw2033\")\n     await driver.sleep(15000)\n \n     await driver.findElement(By.css(\"#root > div > div:nth-child(2) > div:nth-child(2) > div > p\")).click()\n     await driver.sleep(15000)\n    \n     assert(await driver.findElement(By.css(\".errores > h2\")).getText() == \"¡Se han guardado los cambios de manera exitosa!\")",
+              "err": {},
+              "uuid": "4f69d8e2-d3bc-4bfc-bf5e-f4c8dd39f91e",
+              "parentUUID": "652efb7c-ca3d-4679-9deb-775b786d521f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "00398b89-b353-444b-a617-005adeb715d4",
+            "b6eae3ee-cf9a-42cb-a850-36b0128d44a6",
+            "4f69d8e2-d3bc-4bfc-bf5e-f4c8dd39f91e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 323481,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 300000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.3.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}

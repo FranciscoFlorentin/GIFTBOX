@@ -1,0 +1,303 @@
+{
+  "id": "90324fb3-44ea-406e-9720-45e55c536ed3",
+  "version": "2.0",
+  "name": "GITBOX - TESTING",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "4d195267-691f-4973-a761-299678cd049e",
+    "name": "Test- Editar Usuario",
+    "commands": [{
+      "id": "3561e2d3-8944-4bf3-9af3-a536a7644db5",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "365362b1-a2d2-4943-8d8e-8ee8c2644c49",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x741",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "458552c6-01e7-49ea-b9e0-ecc0972cfd82",
+      "comment": "",
+      "command": "click",
+      "target": "css=.userName > p",
+      "targets": [
+        ["css=.userName > p", "css:finder"],
+        ["xpath=//div[@id='headerContainer']/div[2]/div[2]/a/div/p", "xpath:idRelative"],
+        ["xpath=//a/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Mi perfil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aba87b04-58c0-415e-be6b-76f28aeb17df",
+      "comment": "",
+      "command": "type",
+      "target": "name=cuenta",
+      "targets": [
+        ["name=cuenta", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='cuenta']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "benedettellilucio@hotmail.com"
+    }, {
+      "id": "d0ef11d8-9fda-439c-af2f-e5316a9579d9",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "bootcamp2022"
+    }, {
+      "id": "2e5a8408-003b-4209-8d7a-ec2feccf5bcb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.far",
+      "targets": [
+        ["css=.far", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "349d60fd-cd6a-4cde-9067-80c7941d264c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.guardaCambioContrase\\F1 a > p",
+      "targets": [
+        ["css=.guardaCambioContrase\\F1 a > p", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaa2813d-3d12-4d7d-8597-de25de69a1e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.datosUser > p",
+      "targets": [
+        ["css=.datosUser > p", "css:finder"],
+        ["xpath=//div[@id='headerContainer']/div[2]/div[2]/a/div/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//a/div/div/div/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Lucio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24055965-9bca-49f2-a3c2-d9f7effe91bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Editar Usuario",
+      "targets": [
+        ["linkText=Editar Usuario", "linkText"],
+        ["css=.logOut:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Editar Usuario')]", "xpath:link"],
+        ["xpath=//div[@id='headerContainer']/div[2]/div[2]/a/div/div/div/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/editUsuario')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a5a7a01-a44c-4367-93a3-a42cdef52898",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a:nth-child(1) .far",
+      "targets": [
+        ["css=.a:nth-child(1) .far", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div/div/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab6e47bc-0563-4a4f-87be-102481d06b75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editUsuario:nth-child(2) > .guardaCambioContrase\\F1 a > p",
+      "targets": [
+        ["css=.editUsuario:nth-child(2) > .guardaCambioContrase\\F1 a > p", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'GUARDAR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bddb7eb0-90f6-4821-ae52-c400fb6e5354",
+      "comment": "",
+      "command": "click",
+      "target": "name=passwordAnterior",
+      "targets": [
+        ["name=passwordAnterior", "name"],
+        ["css=.a:nth-child(1) > .inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='passwordAnterior']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afc6b5ac-35e9-4ef3-a176-ac994a787d8a",
+      "comment": "",
+      "command": "type",
+      "target": "name=passwordAnterior",
+      "targets": [
+        ["name=passwordAnterior", "name"],
+        ["css=.a:nth-child(1) > .inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='passwordAnterior']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "bootcamp2022"
+    }, {
+      "id": "c3014ed7-c19c-4939-bb10-d6bcda38baf9",
+      "comment": "",
+      "command": "click",
+      "target": "name=repetirPassword",
+      "targets": [
+        ["name=repetirPassword", "name"],
+        ["css=.modificarEmailUsuario > .a:nth-child(2) > .inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='repetirPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90060d93-664a-4eae-b389-82dfa9797316",
+      "comment": "",
+      "command": "type",
+      "target": "name=repetirPassword",
+      "targets": [
+        ["name=repetirPassword", "name"],
+        ["css=.modificarEmailUsuario > .a:nth-child(2) > .inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='repetirPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "bootcamp20223"
+    }, {
+      "id": "f676f7c4-e651-47e8-ae16-c8949b734518",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.cambiarPassword .inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c8b3256-9aef-4b14-94f7-5c986d30c7c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editUsuario:nth-child(2)",
+      "targets": [
+        ["css=.editUsuario:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8898bfe9-6e18-4adf-bb2d-f80b9bff8f11",
+      "comment": "",
+      "command": "click",
+      "target": "name=repetirPassword",
+      "targets": [
+        ["name=repetirPassword", "name"],
+        ["css=.modificarEmailUsuario > .a:nth-child(2) > .inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='repetirPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98e9a85c-6f15-4757-8e36-830b08bc11f9",
+      "comment": "",
+      "command": "type",
+      "target": "name=repetirPassword",
+      "targets": [
+        ["name=repetirPassword", "name"],
+        ["css=.modificarEmailUsuario > .a:nth-child(2) > .inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='repetirPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "bootcamp2022"
+    }, {
+      "id": "12d622f6-5b3d-4a3c-bd97-193e369b058d",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.cambiarPassword .inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5f2f179-a5f8-4f6f-922c-11c1c2912787",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.cambiarPassword .inputRegisterPassword", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "bootcamp2021"
+    }, {
+      "id": "d1339210-872b-4cca-88e6-537ec2455223",
+      "comment": "",
+      "command": "click",
+      "target": "css=.editUsuario:nth-child(2) > .guardaCambioContrase\\F1 a",
+      "targets": [
+        ["css=.editUsuario:nth-child(2) > .guardaCambioContrase\\F1 a", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb29319b-cafd-4ec4-88d8-ff784d09e435",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.errores > h2",
+      "targets": [
+        ["css=.errores > h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'¡Se han guardado los cambios de manera exitosa!')]", "xpath:innerText"]
+      ],
+      "value": "¡Se han guardado los cambios de manera exitosa!"
+    }, {
+      "id": "bb859660-be57-41ea-a339-5ad55f9719d7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "524230b8-5c94-472e-843f-e05faefb5d28",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4d195267-691f-4973-a761-299678cd049e"]
+  }],
+  "urls": [],
+  "plugins": []
+}
